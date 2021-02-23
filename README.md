@@ -8,6 +8,6 @@
 - *TBD*
 
 ### Assignments
-- Host a HTML site on GitHub Pages.
-- JavaScript: Creating UI Controls + Text box
+- Host a HTML site on GitHub Pages: [link](https://ddsooxo.github.io/csc-196W/)
+- JavaScript: Creating UI Controls + Text box: [link](https://ddsooxo.github.io/csc-196W/wk4/index.html)
 - *TBD*
