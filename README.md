@@ -5,6 +5,8 @@
 - Basics of HTML, CSS, Git
 - Intro to CSS, Box Model, Flex
 - Intro to JavaScript and DOM Manimpulation
+- JavaScript, DOM, Timer
+- Asynchronous, Promises, Fetch
 - *TBD*
 
 ### Assignments
