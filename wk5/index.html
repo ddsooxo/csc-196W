@@ -1,24 +1,40 @@
-<!-- Week 5 JavaScript Practice: currently in Progress -->
-<!-- Sample Week 5 assignment Below -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Learning About Nodes</title>
+    <title> Learn JavaScript DOM with Dee</title>
     <script src="./index.js"></script>
     <link rel="stylesheet" href="./index.css">
-
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Shark World</h1>
-    <p>The world's leading source on <strong>shark</strong> related information.</p>
-    <h2>Types of Sharks</h2>
-    <ul>
-        <li>Hammerhead</li>
-        <li>Tiger</li>
-        <li>Great White</li>
-    </ul>
+    <h1 class="main-title">Learn JavaScript DOM with Dee</h1>
+    <p class="p-description">DOM stands for Document Object Model</p>
+    <h2 class="main-title">Part 1: Selecting Website Elements</h2>
+
+    <div id="firstDiv">
+        <p> Div says: Hello World! </p>
+    </div>
+
+    <p>Let's grab the first div element! In your JS Script file, type
+        in<code>document.getElementByID('first-div');</code>to grab the div element by ID. In this case, we
+        have the ID as 'first-div'. Click the button to show the value of what's inside of the first div
+        element.
+        <br><button class="showValue" onclick="firstDiv()">Show First Div Value</button>
+    </p>
+
+    <div id="secondDiv"></div>
+
+    <div id="thirdDiv"></div>
 </body>
 
 </html>
