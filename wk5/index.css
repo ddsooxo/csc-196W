@@ -6,6 +6,11 @@
   margin: 8px;
 }
 
+hr {
+  padding: 0px;
+  margin: 0px;
+}
+
 .change {
   background-color: lightgreen;
   font-size: 100px;
@@ -24,6 +29,7 @@ code {
   text-transform: capitalize;
   font-weight: bold;
 }
+
 .p-description {
   color: rgb(105 105 105);
 }
@@ -48,5 +54,16 @@ button {
 body {
   /* max-width: 600px; */
   font-family: sans-serif;
-  color: #4d3ef9; /*#333;*/
+  color: #4d3ef9;
+  /*#333;*/
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: red; */
+  color: gray;
+  text-align: center;
 }
