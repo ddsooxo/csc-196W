@@ -67,3 +67,13 @@ footer {
   color: gray;
   text-align: center;
 }
+
+a {
+  color: gray;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: #4d3ef9;
+}
