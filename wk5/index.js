@@ -4,6 +4,17 @@
 // var text = document.getElementById("main-title").innerHTML;
 // alert("the main title is" + text);
 
+// highlight every text that are 8 characters long with pink background
+function highlightPink(){
+    const pTag = document.querySelector('p');
+    pTag.innerHTML = pTag.innerText
+        .split(' ')
+        .map(word => word.length > 4 ? `<span style="background-color:pink">${word}</span>` : word)
+        .join(' ');
+}
+
+
+
 
 //grab the HTML element and store it in the variable
 
