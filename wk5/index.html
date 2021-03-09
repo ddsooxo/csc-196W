@@ -26,22 +26,31 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
     <h1 class="title">Learn JavaScript DOM with Dee</h1>
     <hr />
-    <h2 class="title">Selecting Website Elements</h2>
-    <h3 class="title">Query Selector</h3>
-    <h4>
-      Let's grab the first div element! First,
-      type<u>document.querySelector('p');</u>to grab the p tag element and
-      assign it to a variable called <u>pTag</u>. Click the button to highlight
-      all the words with less than 4 characters in the p tag. <br />
-
-      <code> const pTag = document.querySelector('p'); </code> <br />
-      
-      <br /><button class="showValue" onclick="firstDiv()">Highlight</button>
-      Click to highlight all the words with less than 4 characters in the p tag.
+    <h2 class="title">Selecting Website Elements: Query Selector</h2>
+    <h4 class="explanation">
+      Let's grab the first div element!
+      <br />In your index.js file, type<code class="inline-code">
+        const pTag = document.querySelector('p'); </code
+      >. The<span class="code-text">document.querySelector('p');</span>grabs the
+      p tag element and we are assigning this to a variable called
+      <span class="code-text">pTag</span>.<br />
+      Now, let's try to grab all text in Div 1 that are greater than 6
+      characters.<br />Type
+      <code class="inline-code"
+        >pTag.innerHTML = pTag.innerText.split(' ').map(word =&gt; word.length
+        &gt; 6 ? `&lt;span
+        style=&quot;background-color:pink&quot;&gt;${word}&lt;/span&gt;` : word)
+        .join(' ');</code
+      ><br />
+      Wrap this code in a function called
+      <code class="inline-code">const highlightPink()</code><br />
+    </h4>
+    <h4 class="explanation">
+      <button class="showValue" onclick="highlightPink()">Highlight</button>
+      <button class="removeValue" onclick="removePink()">Remove</button>
     </h4>
     <hr style="width: auto; position: fixed" />
 
@@ -53,10 +62,20 @@
         neque?
       </p>
     </div>
-
-    <div id="secondDiv"></div>
-
-    <div id="thirdDiv"></div>
+    <h4 class="explanation">
+      Your JavaScript DOM manipulated function in ur js file should now look
+      like:
+      <br />
+      <pre><code>function highlightPink() { 
+    const pTag = document.querySelector('p');
+    pTag.innerHTML = pTag.innerText
+    .split(' ')
+    .map(word => word.length&gt; 6 ? `&lt;span style=&quot;background-color:pink&quot;&gt;${word}&lt;/span&gt;` : word)
+    .join(' '); 
+  }
+            </code>
+          </pre>
+    </h4>
   </body>
   <div class="footer"></div>
   <footer>

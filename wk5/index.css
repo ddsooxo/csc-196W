@@ -1,7 +1,5 @@
 * {
-  /* font-family: roboto mono; */
   font-family: Oxygen;
-  /* border: 2px solid #dedede; */
   padding: 5px;
   margin: 8px;
 }
@@ -16,12 +14,33 @@ hr {
   font-size: 100px;
 }
 
-code {
+pre {
+  background-color: #b9b8c274;
+  border-radius: 0.5em;
+}
+
+.inline-code {
   color: #000000c5;
   background-color: #eee;
   border-radius: 3px;
   font-family: "Fira Code", monospace;
   padding: 0 3px;
+}
+
+code {
+  color: #000000c5;
+  /* background-color: #eee; */
+  border-radius: 3px;
+  font-family: "Fira Code", monospace;
+  padding: 0 3px;
+}
+
+.code-text {
+  color: #009688;
+}
+
+.explanation {
+  line-height: 1.5;
 }
 
 .title {
@@ -35,27 +54,36 @@ code {
 }
 
 #firstDiv {
+  line-height: 2;
   border: solid 1px;
+  padding: 20px;
   border-radius: 2em;
   /* background-color: #4d3ef9; */
   color: rgb(93, 83, 69);
   border-radius: 0.25em;
-  max-width: 200px;
+  max-width: 500px;
 }
 
-button {
+.showValue {
   font-family: "DM Serif Text", serif;
-  background-color: #4d3ef9;
-  color: blanchedalmond;
+  background-color: #f961bc;
+  color: white;
+  border-radius: 3em;
+  box-shadow: none;
+  border-color: white;
+}
+
+.removeValue {
+  font-family: "DM Serif Text", serif;
+  background-color: #828282;
+  color: white;
   border-radius: 3em;
   border-color: white;
 }
 
 body {
-  /* max-width: 600px; */
   font-family: sans-serif;
-  color: #4d3ef9;
-  /*#333;*/
+  color: #8b83e8;
 }
 
 footer {

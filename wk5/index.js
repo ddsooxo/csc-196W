@@ -4,15 +4,22 @@
 // var text = document.getElementById("main-title").innerHTML;
 // alert("the main title is" + text);
 
-// highlight every text that are 8 characters long with pink background
-function highlightPink(){
+// highlight every text that are 6 characters long with pink background
+function highlightPink() {
     const pTag = document.querySelector('p');
     pTag.innerHTML = pTag.innerText
         .split(' ')
-        .map(word => word.length > 4 ? `<span style="background-color:pink">${word}</span>` : word)
+        .map(word => word.length > 6 ? `<span style="background-color:pink">${word}</span>` : word)
         .join(' ');
 }
 
+function removePink() {
+    const pTag = document.querySelector('p');
+    pTag.innerHTML = pTag.innerText
+        .split(' ')
+        .map(word => word.length > 6 ? `<span style="background-color:white">${word}</span>` : word)
+        .join(' ');
+}
 
 
 
