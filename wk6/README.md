@@ -1,0 +1,1 @@
+This week's assignment is a continuation of last week's work, you will be practicing using different UI elements in HTML with a JavaScript program to perform some operations on user input. You'll create a cryptogram generator, which takes any message as input and outputs a cipher message in a few different possible outputs
