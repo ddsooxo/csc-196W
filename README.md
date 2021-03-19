@@ -13,3 +13,4 @@
 - Host a HTML site on GitHub Pages: [link](https://ddsooxo.github.io/csc-196W/)
 - JavaScript: Creating UI Controls + Text box: [link](https://ddsooxo.github.io/csc-196W/wk4/index.html)
 - JavaScript: DOM Manipulation Exercise : [link](https://ddsooxo.github.io/csc-196W/wk5/index.html)
+- JavaScript: Week 6 Assignment - Cryptogram Generator (_in progress_)
