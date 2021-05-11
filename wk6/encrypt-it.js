@@ -7,6 +7,7 @@ function handleClick() {
 
 function reset() {
   document.getElementById("input-text").value = "";
+  document.getElementById("result").innerHTML = "";
 }
 
 function shiftCipher(text) {
