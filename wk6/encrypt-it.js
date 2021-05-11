@@ -1,8 +1,38 @@
-/*
- * Starter file 
- */
+function handleClick() {
+  console.log("Window loaded!");
+  var val = document.getElementById("input-text").value;
+  console.log("text-area value: ", val);
+  shiftCipher(val);
+}
 
-console.log("Window loaded!");
+function reset() {
+  document.getElementById("input-text").value = "";
+}
+
+function shiftCipher(text) {
+  text = text.toLowerCase();
+  let result = "";
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] < 'a' || text[i] > 'z') {
+      result += text[i];
+    } else if (text[i] == 'z') {
+      result += 'a';
+    } else { // letter is between 'a' and 'y'
+      let letter = text.charCodeAt(i);
+      let resultLetter = String.fromCharCode(letter + 1);
+      result += resultLetter;
+    }
+  }
+
+  // console.log("result: ", result);
+  const output = document.getElementById("result").innerHTML = result;
+  // console.log("output", output);
+  return result;
+}
+
+
+// console.log("Window loaded!");
+
 (function () {
   "use strict";
 

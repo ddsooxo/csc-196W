@@ -3,7 +3,10 @@
 
 <head>
   <title>Encrypt-It!</title>
+  <!-- linking CSS file to HTML file -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- linking JS file to HTML file -->
   <script src="encrypt-it.js"></script>
 </head>
 
@@ -45,8 +48,8 @@
         </label>
       </p>
 
-      <button id="encrypt-it">Encrypt It!</button>
-      <button id="reset">Reset</button>
+      <button id="encrypt-it" onClick="handleClick()">Encrypt It!</button>
+      <button id="reset" onClick="reset()">Reset</button>
     </fieldset>
 
     <div id="result-area">
